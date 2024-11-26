@@ -1,0 +1,41 @@
+{
+  "tasks": {
+    "dev": "deno task --filter @sample/vite dev",
+    "build": "deno task --filter @sample/vite build"
+  },
+  "workspace": {
+    "members": [
+      "package",
+      "vite"
+    ]
+  },
+  "compilerOptions": {
+    "strict": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "dom.asynciterable",
+      "deno.ns"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:react@^18",
+    "jsxImportSourceTypes": "npm:@types/react@^18"
+  },
+  "lint": {
+    "exclude": [
+      "./.vscode",
+      "**/.vite/*",
+      "**/node_modules/*",
+      "./packages/import/deps.ts",
+      "**/dist/*"
+    ]
+  },
+  "fmt": {
+    "exclude": [
+      "./.vscode",
+      "**/.vite/*",
+      "**/node_modules/*",
+      "**/dist/*"
+    ]
+  }
+}

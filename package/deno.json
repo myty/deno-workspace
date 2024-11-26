@@ -1,0 +1,10 @@
+{
+  "name": "@sample/package",
+  "version": "0.1.0",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
