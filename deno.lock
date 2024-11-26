@@ -7,8 +7,10 @@
     "jsr:@std/data-structures@^1.0.4": "1.0.4",
     "jsr:@std/fs@^1.0.4": "1.0.4",
     "jsr:@std/internal@^1.0.4": "1.0.4",
+    "jsr:@std/path@1": "1.0.7",
     "jsr:@std/path@^1.0.6": "1.0.7",
     "jsr:@std/testing@1": "1.0.3",
+    "npm:@deno/vite-plugin@1": "1.0.0_vite@5.4.9",
     "npm:@headlessui/react@^2.1.10": "2.1.10_react@18.3.1_react-dom@18.3.1__react@18.3.1",
     "npm:@heroicons/react@^2.1.5": "2.1.5_react@18.3.1",
     "npm:@types/react-dom@18": "18.3.1",
@@ -43,7 +45,7 @@
     "@std/fs@1.0.4": {
       "integrity": "2907d32d8d1d9e540588fd5fe0ec21ee638134bd51df327ad4e443aaef07123c",
       "dependencies": [
-        "jsr:@std/path"
+        "jsr:@std/path@^1.0.6"
       ]
     },
     "@std/internal@1.0.4": {
@@ -60,7 +62,7 @@
         "jsr:@std/data-structures",
         "jsr:@std/fs",
         "jsr:@std/internal",
-        "jsr:@std/path"
+        "jsr:@std/path@^1.0.6"
       ]
     }
   },
@@ -222,6 +224,12 @@
         "@babel/helper-string-parser",
         "@babel/helper-validator-identifier",
         "to-fast-properties"
+      ]
+    },
+    "@deno/vite-plugin@1.0.0_vite@5.4.9": {
+      "integrity": "sha512-Q9UeWqs3s7B5lqzu1Z5QrzYAzqTj3+F9YW17tWobGRbT2G40ihwis6zK/+QgMgcG4fm3IqdIfXmpQYhkZpdMfw==",
+      "dependencies": [
+        "vite"
       ]
     },
     "@esbuild/aix-ppc64@0.21.5": {
@@ -1871,7 +1879,9 @@
       "vite": {
         "dependencies": [
           "jsr:@std/assert@1",
+          "jsr:@std/path@1",
           "jsr:@std/testing@1",
+          "npm:@deno/vite-plugin@1",
           "npm:@headlessui/react@^2.1.10",
           "npm:@heroicons/react@^2.1.5",
           "npm:@types/react-dom@18",

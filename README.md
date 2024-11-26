@@ -12,4 +12,4 @@ The `--filter` flag does not work as expected. According to the documentation, t
 
 ### Limitation \#2
 
-Packages within the monorepo cannot be imported into the Vite project. This might be because the Vite project runs in a separate process and does not have access to the Deno runtime.
+Packages within the monorepo cannot be imported into the Vite project. This is related to this Github issue: <https://github.com/denoland/deno/issues/26721>. However, the workaround is to do something similar to what is in this issue: <https://github.com/denoland/deno-vite-plugin/issues/19>.
