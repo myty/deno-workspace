@@ -1,6 +1,6 @@
-# Deno Workspace
+# Deno Workspace Exploration
 
-Welcome to the Deno Workspace project! This repository is dedicated to exploring the capabilities and limitations of using Deno in a monorepo setup.
+Exploring the capabilities and limitations of using Deno in a monorepo setup.
 
 Running `deno task dev` will launch a Vite React project by leveraging the Deno 2.1 `--filter` feature. However, some modifications from the developer documentation were necessary to get it working properly.
 
